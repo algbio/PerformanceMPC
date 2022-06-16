@@ -1,0 +1,6 @@
+To compile:
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make wac
+./prog/wac/wac --help
