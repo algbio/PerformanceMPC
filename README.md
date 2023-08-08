@@ -7,7 +7,7 @@ This repository contains **C++ implementations** of different fast algorithms fo
 > Given a Directed Acyclic Graph (DAG) $G = (V, E)$, a *minimum path cover* (MPC) $\mathcal{P}$ of $G$ is a minimum-sized set of paths of $G$ such that every vertex of $V$ is contained in at least one path of $\mathcal{P}$. A *maxium antichain* (MA) $A$ of $G$ is a maximum-sized set of pairwise non-reachable vertices of $G$. Dilworth's theorem states that the number of paths in an MPC equals the number of vertices in an MA, this number $k$ is known as the *width*.
 
 <p align="center">
-  <img src="https://github.com/elarielcl/PracticalMPC/assets/2347684/b7d1ce33-ee83-4b6e-8d38-c2f6c0e38290" alt="MPC and MA of DAG" width="50%"/>
+  <img src="https://github.com/algbio/PerformanceMPC/assets/2347684/ba659bce-03ed-43b6-a9b4-70eb8e87b570" alt="MPC and MA of DAG" width="50%"/>
 </p>
 
 ## Algorithms
@@ -15,7 +15,7 @@ This repository contains **C++ implementations** of different fast algorithms fo
 All algorithms implemented are based on a simple folklore reduction to **minimum flow**. The reduction builds a flow network $\mathcal{G}$ with a global source $s$ and a global sink $t$, and where every vertex $v$ of $V$ is **split** into an edge $(v^{in}, v^{out})$ with **demand** equal to $d(v^{in}, v^{out}) = 1$.
 
 <p align="center">
-  <img src="https://github.com/elarielcl/PracticalMPC/assets/2347684/27983a97-d92e-4bcb-a66d-9ccfe7b1c8b4" alt="Minimum Flow Reduction"width="50%"/>
+  <img src="https://github.com/algbio/PerformanceMPC/assets/2347684/e2950619-a092-4242-8c80-af53b3434ef0" alt="Minimum Flow Reduction"width="50%"/>
 </p>
 
 A **decomposition** of a minimum flow $f^*$ of $\mathcal{G}$ corresponds to an MPC of $G$.
